@@ -6,93 +6,8 @@
     <title>Flex site</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .note {
-            background: yellow;
-            padding: 5px;
-        }
-
-        .note h4 {
-            text-align: center;
-        }
-
-        .header {
-            padding: 60px;
-            text-align: center;
-            background: #1abc9c;
-            color: white;
-        }
-
-        .navbar {
-            display: flex;
-            background-color: #333;
-        }
-
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .side {
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-
-        .main {
-            flex: 70%;
-            background-color: white;
-            padding: 20px;
-        }
-
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }
-
-        .bigimg {
-            height: 200px;
-        }
-
-        .smallimg {
-            height: 60px;
-        }
-
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-        }
-
-        @media screen and (max-width: 700px) {
-            .content, .navbar {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -100,60 +15,69 @@
         <h4>Consequat duis sint tempor nostrud esse sunt elit aute velit reprehenderit quis Lorem.</h4>
     </div>
 
-    <div class="header">
+    <header class="header">
         <h1>Megacorporation</h1>
         <p>Proident nisi minim eiusmod aute.</p>
-    </div>
+    </header>
 
-    <div class="navbar">
-        <a href="#">Menu 1</a>
-        <a href="#">Menu 2</a>
-        <a href="#">Menu 3</a>
-        <a href="#">Menu 4</a>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li> <a href="#">Menu 3</a></li>
+            <li> <a href="#">Menu 4</a></li>
+        </ul>
 
-    <div class="content">
-        <div class="side">
-            <h2>About Us</h2>
-            <h5>Our ofiice</h5>
-            <div class="fakeimg bigimg">Image</div>
-            <p>Ut sunt elit ipsum reprehenderit nulla.</p>
-            <p>Ut sunt elit ipsum reprehenderit nulla.</p>
+    </nav>
 
-            <h3>In est officia veniam enim ea ipsum.</h3>
-            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 1</div>
-            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 2</div>
-            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 3</div>
-            <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-        </div>
+    <main class="content">
+        <main class="side">
+            <aside>
+                <h2>About Us</h2>
+                <h3>Our ofiice</h3>
+                <div class="fakeimg bigimg"><img src="https://picsum.photos/364/200
+                " alt="picture our ofice"></div>
+                <p>Ut sunt elit ipsum reprehenderit nulla.</p>
+                <p>Ut sunt elit ipsum reprehenderit nulla.</p>
+            </aside>
+            <aside>
+                <h3>In est officia veniam enim ea ipsum.</h3>
+                <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+                <div class="fakeimg smallimg">Image 1</div>
+                <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+                <div class="fakeimg smallimg">Image 2</div>
+                <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+                <div class="fakeimg smallimg">Image 3</div>
+                <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
+            </aside>
+        </main>
 
-        <div class="main">
-            <h2>Commodo dolore quis non cupidatat.</h2>
-            <h5>Commodo aliquip pariatur ullamco occaecat veniam sit.</h5>
-            <div class="fakeimg bigimg">Image</div>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-
+        <article class="main">
+            <section>
+                <h2>Commodo dolore quis non cupidatat.</h2>
+                <h3>Commodo aliquip pariatur ullamco occaecat veniam sit.</h3>
+                <div class="fakeimg bigimg"><img src="https://picsum.photos/904/200" alt="basic photo"></div>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+            </section>
             <br>
+            <section>
+                <h2>Commodo dolore quis non cupidatat.</h2>
+                <h3>Commodo aliquip pariatur ullamco occaecat veniam sit.</h3>
+                <div class="fakeimg bigimg"><img src="https://picsum.photos/903/200" alt="basic photo2"></div>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+                <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
+            </section>
+        </article>
+    </main>
 
-            <h2>Commodo dolore quis non cupidatat.</h2>
-            <h5>Commodo aliquip pariatur ullamco occaecat veniam sit.</h5>
-            <div class="fakeimg bigimg">Image</div>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-            <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
-        </div>
-    </div>
-
-    <div class="footer">
+    <footer class="footer">
         <h2>Sint ad et tempor culpa fugiat in qui sunt officia velit.</h2>
-    </div>
+    </footer>
 </body>
 
 </html>
